@@ -1,12 +1,15 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
-
+<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+<script src="jquery.fancybox.min.js"></script>
+<link  href="jquery.fancybox.min.css" rel="stylesheet">
+<link rel="stylesheet" href="Main.css">
     <title>Carousel Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
@@ -115,7 +118,7 @@
             <p class="lead">У Національному університеті «Острозька академія» 10 вересня презентували міжнародну програму «Enactus». «Enactus» — це міжнародна організація, яка займається створенням соціальних підприємницьких проектів. Вона об’єднує студентів, викладачів та представників бізнесу. Учасники змагаються за те, щоб їхній проект профінансували.</p>
           </div>
           <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" src="enactus.jpg" alt="Generic placeholder image">
+            <img data-fancybox="gallery" href="enactus.jpg" data-caption="Програма «Enactus»" class="featurette-image img-fluid mx-auto" src="enactus.jpg" alt="Generic placeholder image">
           </div>
         </div>
 
@@ -127,7 +130,7 @@
             <p class="lead">Традиційно день народження Острозької академії проходить у колі близьких друзів, партнерів та всіх, хто стояв біля витоків її відродження. У цей святковий день вона перетворюється на пасіку з факультетськими вуликами, бджолами та ярмарком. Цього року чи не найголовнішими подіями свята стали акції «Моя мова жива!»: флеш-моб «436 імен Острозької академії», «Милозвучно українською» та «Відкритий мікрофон», які вже вкотре підтвердили гасло нашої альма-матер — «Сучасна освіта — крізь досвід століть». Саме вони показали, наскільки в Острозькій академії люблять українську мову, культуру, літературу, наскільки тут готові примножувати кращі українські традиції. До студентських святкувань долучилися почесні гості, протектори та друзі Острозької академії.</p>
           </div>
           <div class="col-md-5 order-md-1">
-            <img class="featurette-image img-fluid mx-auto" src="den.jpg" alt="Generic placeholder image">
+            <img data-fancybox="gallery" href="den.jpg" data-caption="Святкувала повноліття Острозької академії" class="featurette-image img-fluid mx-auto" src="den.jpg" alt="Generic placeholder image">
           </div>
         </div>
 
@@ -139,7 +142,7 @@
             <p class="lead">Студенти Національного університету «Острозька академія» 16 жовтня мали нагоду поспілкуватися із відомим економістом, громадським діячем, меценатом, дійсним членом Римського клубу Богданом Гаврилишиним, чиї унікальні досягнення у сфері права, економіки, менеджменту та політики відомі далеко за межами України. В Острозькій академії він уже вдруге.</p>
           </div>
           <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" src="gav.jpg" alt="Generic placeholder image">
+            <img data-fancybox="gallery" href="gav.jpg" data-caption="Богдан Гаврилишин читає лекцію в Острозькій академії" class="featurette-image img-fluid mx-auto" src="gav.jpg" alt="Generic placeholder image">
           </div>
         </div>
 
@@ -156,11 +159,28 @@
         <p>&copy; 2017-2018 Кн 11. &middot; <a href="#">Конфіденційність</a> &middot; <a href="#">Умови</a></p>
       </footer>
     </main>
+<script type="text/javascript">
+$('[data-fancybox]').fancybox({
+	loop: true,
+  buttons: [
+       "zoom",
+       "share",
+       "slideShow",
+       "fullScreen",
+       "download",
+       "thumbs",
+       "close"
+     ],
+     animationEffect: "zoom",
+     transitionEffect: "zoom-in-out"
+});
 
+
+</script>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="../../assets/js/vendor/popper.min.js"></script>
     <script src="../../dist/js/bootstrap.min.js"></script>
